@@ -8,15 +8,17 @@ public class Main {
 
     public static void main(String[] args) {
 
-        AVLTree tree = new AVLTree();
-        tree.insert(12);
-        tree.insert(3);
-        tree.insert(9);
-        tree.insert(4);
-        tree.insert(6);
-        tree.insert(2);
+        Trie trie = new Trie();
 
-        System.out.println("Hi");
+
+        trie.insert("Car");
+        trie.insert("card");
+        trie.insert("careful");
+        trie.insert("care");
+        trie.insert("egg");
+        var result = trie.autoComplete("C");
+        System.out.println(result);
+
     };
 
 
